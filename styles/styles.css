@@ -1,0 +1,17 @@
+body {
+    background-color:darkgray;
+    color:black
+}
+
+/* 1.col style */
+.col:first-of-type {
+    background-color: rgb(235, 226, 219);
+}
+/* 2.col style */
+.col:nth-of-type(2) {
+    background-color: chocolate;
+}
+/* 3.col style */
+.col:nth-of-type(3) {
+    background-color: blanchedalmond;
+}
