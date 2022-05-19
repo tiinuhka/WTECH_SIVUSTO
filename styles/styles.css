@@ -20,12 +20,18 @@ h1 {
     text-align-last: right;
 }
 
+.container {
+    -ms-flex-align: center;
+}
+
 .col h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:fantasy;
     font-weight: 300;
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
+    color: rgb(4, 6, 36);
+    text-transform: uppercase;
 }
 
 p {
@@ -48,22 +54,22 @@ p {
 #label {
     position: absolute;
     top: -10px;
-    left: 20px;
+    left: 30px;
     height: 220px;
-    width: 400px;
+    width: 420px;
     
     background-color: pink;
     border: 2px solid black;
     text-align: center;
 }
 
+
 .col {
-   /* border: solid;
-    border-color: black;
-    border: width 1px; */
-    margin-top: 10px;
-    padding-top: 10px;
+  
+    margin-top: 80px;
+    padding-top: 50px;
     padding-right: 10;
+
 }
 
 /* 1.col style */
@@ -73,7 +79,7 @@ p {
 }
 /* 2.col style */
 .col:nth-of-type(2) {
-    background-image: url("/images/jalatopac91.jpg");
+    background-color: rgb(216, 139, 94);
 }
 /* 3.col style */
 .col:nth-of-type(3) {
@@ -82,6 +88,9 @@ p {
 
 .btn {
     margin-top: 40px;
-    margin-left: 110px;
-    text-align: match-parent;
+    background-color: pink;
+    transition: all 0.5s ease;
+    font-size: medium;
+    font-weight: lighter;
+    
 }
