@@ -8,62 +8,46 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
     <title>Tiinon_webTech</title>
   </head>
   <body>
-    <!--navbar start-->
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="tiino.html">Tiino(TM)</a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="dynamic.html">Dynamic page</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="githpages.html">Github pages</a></li>
-                  <li><a class="dropdown-item" href="netlify.html">Netlify</a></li>
-                  <li><a class="dropdown-item" href="wp.html">WordPress</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="dynamic.html">Dynamic page</a></li>
-                </ul>
-              </li>
-            </ul>
-                
-          </div>
-        </div>
-      </nav>
-    <!--navbar ends-->
-    
+    <!--navbar begins-->
     <div id="container">
         <div id="label"><h1>Experimenting on website publishing services</h1>
         </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown button
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="githpages.html">Github pages</a>
+                  <a class="dropdown-item" href="netlify.html">Netlify</a>
+                  <a class="dropdown-item" href="wp.html">WordPress</a>
+                </div>
+            </div>
+        </div>
     </div>
-    
+     <!--navbar ends-->
+
     <!-- gridstart-->
     <div class="container">
         <div class="row">
-            <div class="col col-4"><a href="https://pages.github.com/"><h2>1. Github pages</h2></a>
+            <div class="col col-md-4 col-sm-6"><a href="https://pages.github.com/"><h2>1. Github pages</h2></a>
                 <p>Github pages is  comparatively easy to use and free of charge (there is a paid account possibility as well though). As usual, there is a lot of comprehensive learning material available on the Github home pages and the web (f.ex. Youtube) also. In the Github feature pages there’s a list of the main features of their service. Here’s some of them:
                 </p>
                 <button type="button" class="btn btn-outline-dark btn-lg">Read more about <br><i>Github pages</i> 
                 </button>
             </div>
-            <div class="col col-4">
+            <div class="col col-md-4 col-sm-6">
                 <a href="https://www.netlify.com/"><h2>2. Netlify</h2></a>
+                
                 <p>I found quite an interesting resource of user experiences of Netlify on
-                Capterra.com. Here’s some of the pros and cons written by the developers:
+                <a href="https://www.trustradius.com/">Capterra.com</a>. Here’s some of the pros and cons written by the developers:
                 “Netlify: Not a beginner tool”
                 “Deploy from Git with ease”
                 “La gran alternativa al Hosting tradicional”</p>
@@ -71,15 +55,14 @@
                 </button>
             </div>
                 
-            <div class="col col-4">
+            <div class="col col-md-4 col-sm-12">
                 <a href="https://wordpress.com/"><h2>3. WordPress</h2></a>
-                <p>From the Trustradius -website:
+                <p>
                 “Wordpress is an open-source publishing platform popular with bloggers, and a content
-                management system, known for its simplicity and modifiability. Websites may host their own
-                blogging communities, controlling and moderating content from a single dashboard.”
-                Wordpress has a great reputation as a flexible and user friendly web publishing platform.
-                Customer base is huge, two out of every five websites on the internet use WordPress
-                (Hubspot.com 2022).</p>
+                management system, known for its simplicity and modifiability. <br>
+                Websites may host their own blogging communities, controlling and moderating content from a single dashboard.”
+                <br>(<a href="https://www.trustradius.com/">Trustradius.com 2022</a>)
+                </p>
                 <button type="button" class="btn btn-outline-dark btn-lg">Read more about <br><i>Wordpress</i>
                 </button>
             </div>
@@ -87,11 +70,42 @@
     </div>
 
     <!-- gridend-->
-    <!-- Optional JavaScript -->
+
+
+    <!--footer begins-->
+  <footer class="footer bg-dark text-white">
+    <div class="container-custom d-flex justify-content-between
+         align-items-center py-3 border-highlight">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="me-2 text-muted">
+          <span><i class="bi bi-book-half"></i>
+          <p>Tiina Hämäläinen <br>
+            TIK22KM<br>
+            Web-technics<br>
+            Comparing web publishing services <br>
+            2022
+          </p>
+      </div></span>&copy;
+        </a>
+    </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex text-white">
+        <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-twitter"></i>></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-instagram"></i>></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-linkedin"></i>></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-facebook"></i>></a></li>
+      </ul>
+    </div>
+  </footer>
+
+   <!--footer ends-->
+    
+<!--Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="/js/script.js"></script>  
+<script src="/js/script.js"></script>
+
 </body>
 </html>

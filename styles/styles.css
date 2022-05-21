@@ -2,8 +2,8 @@ body {
     background-color:rgb(118, 101, 101);
     color: rgb(2, 2, 71);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
 
+}
 
 h1 {
     font-weight: 700;
@@ -16,19 +16,34 @@ h1 {
    
 }
 
+h3 {
+    font-family:'Courier New', Courier, monospace;
+    font-size: small;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(16, 21, 88);
+    text-transform: uppercase;
+
+}
+
 .nav {
     text-align-last: right;
     
 }
 
 .container {
-    -ms-flex-align: center;
+    margin-top: 40;
+    padding-left: 20;
+    margin-bottom: 80px;
+        
 }
+    
 
 .col h2 {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-    font-weight: 300;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 100;
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
@@ -51,7 +66,8 @@ p {
     border: 1px solid black;
     position: relative;
     background-color: blanchedalmond;
-    background-image: url("/images/jalatopac91.jpg");
+    margin-top: 100px;
+    
 }
 
 #label {
@@ -62,17 +78,21 @@ p {
     width: 420px;
     
     background-color: pink;
-    border: 2px solid black;
+    border: 2px solid rgb(8, 8, 8);
     text-align: center;
+    margin-top: 100;
 }
 
+.dropdown {
+    text-shadow: black;
+    text-align: right;
+}
 
 .col {
   
     margin-top: 80px;
     padding-top: 50px;
-    padding-right: 10;
-
+   
 }
 
 /* 1.col style */
@@ -90,7 +110,9 @@ p {
 }
 
 .btn {
-    margin-top: 40px;
+    margin-top: 50px;
+    margin-left: 50;
+    margin-right: 50;
     background-color: pink;
     transition: all 0.5s ease;
     font-size: medium;
