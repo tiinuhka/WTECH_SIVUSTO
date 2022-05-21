@@ -88,17 +88,20 @@ p {
     text-align: right;
 }
 
-.col {
-  
+[class^=col] {
     margin-top: 80px;
     padding-top: 50px;
+    border-radius: 25px;
+  
+  padding: 20px;
+  width: 200px;
+  height: 600px;
    
 }
 
 /* 1.col style */
 .col:first-of-type {
     background-color: rgb(235, 226, 219);
-   
 }
 /* 2.col style */
 .col:nth-of-type(2) {
@@ -110,6 +113,29 @@ p {
 }
 
 .btn {
+    margin-top: 40px;
+    margin-left: 50;
+    margin-right: 50;
+    display: grid right;
+    background-color: pink;
+    transition: all 0.5s ease;
+    font-size: medium;
+    font-weight: lighter;
+        
+}
+
+.btn btn-2 {
+    margin-top: 20px;
+    margin-left: 100;
+    margin-right: 50;
+    
+    background-color: pink;
+    transition: all 0.5s ease;
+    font-size: medium;
+    font-weight: lighter;  
+}
+
+.accordion-flush {
     margin-top: 50px;
     margin-left: 50;
     margin-right: 50;
@@ -117,6 +143,4 @@ p {
     transition: all 0.5s ease;
     font-size: medium;
     font-weight: lighter;
-    
-    
 }
